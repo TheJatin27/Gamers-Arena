@@ -1,0 +1,111 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/Admin_Hedder.cshtml";
+}
+
+
+<head>
+    <script>
+
+        function cl() {
+
+            window.location.href ='/admin/game'
+
+        }
+
+
+
+        function ucl() {
+
+            window.location.href = '/admin/add_user'
+
+        }
+
+
+
+
+        function tcl() {
+
+            window.location.href = '/admin/tournment'
+
+        }
+
+
+
+        function lcl() {
+
+            window.location.href = ''
+
+        }
+
+
+    </script>
+
+    <link href="https://db.onlinewebfonts.com/c/5af457eecfd569c3264036d92c93d7ec?family=Cyberverse" rel="stylesheet">
+
+    <link rel="stylesheet" href="~/Content/Tecpile project/css/dashbord.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+ 
+
+
+
+
+    <div id="main">
+
+        <br><br><br>
+        <div id="boxes" style="margin-left:500px;">
+
+
+
+            <div onclick="cl()">
+                <h1>
+                    Games
+
+                </h1>
+            </div>
+
+
+
+            <div onclick="tcl()">
+                <h1>
+                    Tournments
+
+                </h1>
+            </div>
+
+
+
+
+
+            <div onclick="ucl()">
+                <h1>
+                    Users
+
+                </h1>
+            </div>
+
+
+
+            <div onclick="lcl()">
+                <h1>
+                    logout
+
+                </h1>
+            </div>
+
+
+
+
+        </div>
+
+    </div>
+
+</body>
+</html>
+

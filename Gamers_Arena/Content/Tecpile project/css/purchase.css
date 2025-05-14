@@ -1,0 +1,132 @@
+body{
+
+    background-image: url(../img/games/gtav/potrait2.jpg);
+    background-position: center;
+    background-size: cover;
+
+}
+
+#myVideo {
+    
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+  }
+
+#main{
+ position: relative;
+
+    background-color: rgba(0, 0, 0,70%);
+    width: 80%;
+    margin: auto;
+    margin-top: 150px;
+    /* border: 1px solid red; */
+    width:80%;
+    height: fit-content; 
+    border:1px solid #ff7843;
+
+}
+
+
+.head{
+
+    margin: auto;
+    margin-top: 100px;
+    /* border: 1px solid red; */
+    width:90%;
+    height: 600px;
+
+    display: flex;
+    
+
+}
+
+.vid{
+
+    /* border: 1px solid red; */
+
+    width: 70%;
+    height: 500px;
+    overflow: hidden;
+
+
+}
+
+.vid video{
+
+    height: 500px;
+    width: 900px;
+
+
+
+}
+
+.detail{
+
+    /* border: 1px solid rgb(71, 105, 228); */
+    width: 30%;
+    height: 600px;
+    margin-left: 10px;
+
+
+}
+
+.detail img{
+
+
+    width: 100%;
+    height: 250px;
+
+
+}
+
+.detail p{
+
+    font-family: "Cyberverse";
+    color: white;
+}
+
+.detail button{
+
+    width: 80%;
+    height: 90px;
+    /* font-family: "Cyberverse"; */
+    font-family: Arial black;
+    color: white;
+    background-color:  #ff7843;
+    /* background-color: green; */
+    margin-left:0px;
+    font-size: 20px;
+    cursor: pointer;
+
+}
+
+.detail button:hover{
+    /* transition: all 3s; */
+
+    transform: translateY(-10px);
+    box-shadow: 5px 5px 5px 0px rgb(246, 244, 245);
+
+
+}
+
+
+
+.info{
+   
+    margin-top:50px;
+
+    font-family: "Cyberverse";
+    color: white;
+
+
+}
+
+
+.info p{
+
+display: flex   ;
+
+}

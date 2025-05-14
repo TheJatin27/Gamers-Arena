@@ -1,0 +1,150 @@
+body{
+
+    background-image: url(../img/random/body.jpg); 
+
+
+}
+
+#big{
+
+
+
+}
+
+
+#navigation{
+/* overflow-y:auto; */
+
+margin-top: -80px;
+background-color: rgba(132, 128, 128,30%);
+    /* background-image: url(../img/random/body.jpg); */
+    /* background-position: center;
+    background-size: cover; */
+    /* border: 1px solid black; */
+
+    margin-left: 10px;
+    height:700px;
+    width: 400px;
+    border-radius: 50px;
+    position: fixed;
+    padding: 10px;
+}
+
+
+#na{
+    /* border: 1px solid black; */
+
+   
+    height:700px;
+    width: 390px;
+
+
+
+
+}
+
+#image{
+
+    height: 200px;
+    /* border: 1px solid rgb(203, 32, 32); */
+
+
+}
+
+#image img{
+    height:200px ;
+    margin-left: 60px;
+    margin-top: 20px;
+
+    box-shadow: 5px 5px 6px 3px black;
+    position:sticky;
+    border-radius: 50%;
+
+
+}
+
+#description{
+    margin-top: 50px ;
+    margin-left: 20px;
+
+    color: whitesmoke;
+    font-size: 15px;
+    
+    /* font-family:"Cyberverse"; */
+    overflow:visible;
+
+
+
+}
+
+
+
+#description h4{
+    /* margin-left: 20px; */
+
+    /* color: whitesmoke; */
+    font-size:15px;
+    text-decoration: underline;
+    
+    /* font-family:"Cyberverse"; */
+  
+
+
+
+}
+
+#description p{
+
+    
+    color:rgb(226, 129, 17);
+    font-size:20px;
+    
+    font-family:Arial Black; 
+
+
+}
+
+#post{
+margin-left:600px;
+/* margin-right: auto; */
+
+    width: 800px;
+    height:500px;
+margin-top: 100px;
+    /* border: 1px solid white; */
+
+}
+
+.post_image{
+
+    width:100%;
+    border-radius: 50px;
+    box-shadow: 5px 5px 5px 0px white;
+    height: 500px;
+ /* margin-left:500px; */
+
+    overflow: hidden;
+    
+
+
+}
+
+
+
+#text{
+
+    color: white;
+    margin-left: 600px;
+    margin-right: auto;
+
+    width: 800px;
+    height:fit-content 
+
+}
+
+#text h2{
+
+    font-family:"Cyberverse";
+
+
+}

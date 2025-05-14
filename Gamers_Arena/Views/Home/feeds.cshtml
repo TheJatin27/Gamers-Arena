@@ -1,0 +1,80 @@
+﻿
+@{
+    ViewBag.Title = "feeds";
+    Layout = "~/Views/Shared/feed_layout.cshtml";
+}
+
+<head>
+
+    {
+    
+    
+    }
+
+    <link rel="stylesheet" href="~/Content/Tecpile project/css/feeds.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="main">
+
+
+
+        <div class="div2">
+
+            <img src="~/Content/Tecpile project/img/agresive/a5.png" alt="">
+
+        </div>
+
+
+        <div class="div1">
+            @{ foreach (var j in ViewBag.pro.Rows)
+                {
+                    <div class="top" style="margin-top:50px; width:100%; height:40px;">
+                        <img src="~/Content/profile/@j[10]" alt="">
+
+                        <p>
+                            @j[5]
+                        </p>
+
+                    </div>
+
+
+
+                <div class="image">
+
+                    <img src="~/Content/post/@j[1]" alt="" style="height:500px; width:700px;">
+
+                </div>
+
+
+
+
+                <div class="text" style="margin-bottom:200px;">
+
+
+                    <h1 style="font-family: Arial, black;"> Heading 1</h1>
+                    <p>
+                        @j[3]
+                    </p>
+
+                </div>
+
+
+
+                    }
+                }
+
+
+        </div>
+
+
+        <div class="div3">
+
+            <img src="~/Content/Tecpile project/img/games/bgmi2.png" alt=" ">
+
+        </div>
+    </div>
+</body>

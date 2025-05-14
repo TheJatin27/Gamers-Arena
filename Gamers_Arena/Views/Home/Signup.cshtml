@@ -1,0 +1,150 @@
+﻿
+@{
+    ViewBag.Title = "Signup";
+    Layout = "~/Views/Shared/General_Hedder_Footer.cshtml";
+}
+
+
+<head>
+
+    <style>
+
+        div {
+            font-family: "Cyberverse";
+        }
+
+        h1 {
+            font-family: "Cyberverse";
+        }
+    </style>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="~/Content/Tecpile project/css/sinup.css">
+    <link href="https://db.onlinewebfonts.com/c/5af457eecfd569c3264036d92c93d7ec?family=Cyberverse" rel="stylesheet">
+
+</head>
+<body>
+
+
+
+
+    <div id="main">
+        <div style="height: fit-content; width: fit-content;">
+            <img src="~/Content/Tecpile project/img/agresive/a5.png" alt="" id="login_image" style="margin-top: 100px; height: 800px;">
+        </div>
+
+        <div id="for">
+
+            <h1>
+
+
+                SIGN UP
+
+
+            </h1>
+
+            <p>
+                Please sign-Up to  start the adventure...
+            </p>
+
+
+            <form method="post"enctype="multipart/form-data">
+
+
+                <div class="form_element" style="  margin-top:100px">
+
+                    <p>
+                        Your Name
+                    </p>
+
+                    <input type="text" placeholder="Enter Your Name" required name="name">
+
+
+                </div>
+
+
+
+                <div class="form_element" style="  margin-top:100px">
+
+                    <p>
+                        Your Email Or Username
+                    </p>
+
+                    <input type="email" placeholder="Your Email Or Username" name="email">
+
+
+                </div>
+
+
+
+                <div class="form_element" style="  margin-top:100px">
+
+                    <p>
+                        enter a Username
+                    </p>
+
+                    <input type="text" placeholder="Enter Username" required name="username">
+
+
+                </div>
+
+
+                <div class="form_element" style="  margin-top:100px">
+
+                    <p>
+                        Choose Your Profile Photo
+                    </p>
+
+                    <input type="File" style="background-color: transparent; cursor: pointer; " name="profile">
+
+
+                </div>
+
+
+
+                <div class="form_element">
+
+                    <p>
+                        Password
+                    </p>
+
+
+                    <input type="password" placeholder="**********" name="pass">
+
+
+                </div>
+
+
+
+                <div class="form_element">
+
+
+
+                    <input type="submit" style=" color: white; background-color:#ff7843; text-align: center; padding: 0px; width: 200px;">
+                    <p>
+                        Already have an account? <a href="/home/login"> Log In</a>
+                    </p>
+
+                    <br><br><br><br><br><br><br><br>
+
+                </div>
+
+
+
+            </form >
+
+
+        </div>
+
+
+    </div>
+    <div style="width:100%; height:100px; margin-bottom:250px;">
+
+    </div>
+
+</body>
+</html>
+

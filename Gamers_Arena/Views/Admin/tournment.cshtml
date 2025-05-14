@@ -1,0 +1,268 @@
+﻿
+@{
+    ViewBag.Title = "tournment";
+    Layout = "~/Views/Shared/Admin_Hedder.cshtml";
+}
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="~/Content/Tecpile project/css/admin_user.css">
+    <link href="https://db.onlinewebfonts.com/c/5af457eecfd569c3264036d92c93d7ec?family=Cyberverse" rel="stylesheet">
+
+</head>
+<body>
+
+
+
+
+    <div id="main">
+        <!-- <div style="height: fit-content; width: fit-content;">
+            <img src="/img/agresive/a5.png" alt="" id="login_image">
+        </div> -->
+
+        <div id="for">
+
+            <h1>
+
+                Add  Event/tournment/News
+
+
+            </h1>
+
+            <form method="post" enctype="multipart/form-data">
+
+                <div class="form_element" style="margin-top:100px">
+
+                    <p>
+                        Name Of Event/tournment/News
+                    </p>
+
+                    <input type="text" placeholder="Name Of User" style="width:350px;" name="name">
+
+
+                </div>
+
+
+
+
+
+                <div class="form_element" style="margin-top:100px">
+
+                    <p>
+                       Content
+                    </p>
+
+                    <input type="text" placeholder="Name Of User" style="width:350px;" name="Con">
+
+
+                </div>
+
+
+
+
+
+
+                <div class="form_element" style="margin-top:100px">
+
+                    <select style="width:350px;" name="game">
+                        Game
+
+                        <option value="0">Select Game</option>
+
+                        @foreach (var row in ViewBag.tour.Rows)
+                        {
+                            <option value="@row[0]" > @row[1]</option>
+
+                        }
+
+
+                        <option></option>
+
+
+
+                    </select>
+                    
+
+
+                </div>
+
+
+
+
+                <div class="form_element" style="  margin-top:100px">
+
+                    <p>
+                        Related Image
+                    </p>
+
+                    <input type="File" style="width:200px" name="image">
+
+
+                </div>
+
+
+
+
+
+
+
+                <div class="form_element">
+
+
+
+                    <input type="submit" style="color: white; background-color:#ff7843; text-align: center; padding: 0px; width: 200px;">
+
+
+
+                </div>
+
+
+
+            </form>
+
+            <div style="width:100%; height:100px; margin-bottom:250px;">
+            </div>
+
+
+        </div>
+
+
+
+
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+
+
+
+
+        <table style="color: white; border: 2px solid white; margin: auto; padding: 5px;">
+
+            <thead>
+            <th style="color: white; border: 2px solid white; padding: 20pxs">
+                SR
+            </th>
+
+            <th style="color: white; border: 2px solid white; padding: 20px">
+                Name of tournment/event
+            </th>
+
+
+
+            <th style="color: white; border: 2px solid white; padding: 20px">
+                Content
+            </th>
+
+
+            <th style="color: white; border: 2px solid white; padding: 20px">
+                Related game
+            </th>
+
+
+            <th style="color: white; border: 2px solid white; padding: 20px">
+                Image
+            </th>
+
+
+
+            <th style="color: white; border: 2px solid white; padding: 20px">
+               delete
+            </th>
+
+
+
+
+
+            </thead>
+
+
+            @{
+
+               
+
+
+                    foreach (var r in ViewBag.tour.Rows)
+                    {
+
+                        <tr>
+
+                            <td style="border:  solid black; padding: 20px">
+                                @r[0]
+
+                            </td>
+
+
+
+                            <td style="border:  solid black; padding: 20px">
+                                @r[1]
+                            </td>
+
+
+                            <td style="border: 2px solid black; padding: 20px">
+                                @r[2]
+                            </td>
+
+
+                            <td style="border: 2px solid black; padding: 20px">
+                                @r[3]
+                            </td>
+
+
+
+                            <td style="border: 2px solid black; padding: 20px">
+                                <img src="~/Content/tournmentImage/" width="50px" height="50px" />
+                            </td>
+
+
+
+                            <td style="border: 2px solid black; padding: 20px">
+                               
+                            </td>
+
+
+
+
+
+
+
+
+
+                        </tr>
+
+
+
+
+
+                    }
+
+                }
+
+            }
+
+
+
+
+
+
+
+
+
+
+        </table>
+
+
+
+</body>
+
+
+

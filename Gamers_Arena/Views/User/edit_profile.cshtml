@@ -1,0 +1,146 @@
+﻿
+@{
+    ViewBag.Title = "edit_profile";
+    Layout = "~/Views/Shared/feed_layout.cshtml";
+}
+
+<head>
+
+    <style>
+
+        /*  body {
+            background-image: url('../img/random/body.jpg');
+            background-position: center;
+            background-size: cover;
+            margin-top: -1px;
+        }*/
+
+    </style>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://db.onlinewebfonts.com/c/5af457eecfd569c3264036d92c93d7ec?family=Cyberverse" rel="stylesheet">
+    <link href="~/Content/Tecpile project/css/add_post.css" rel="stylesheet" />
+</head>
+<body style="margin-top:-1px;">
+
+
+
+
+    <div id="main" style="margin-top:60px; height:fit-content;">
+        <div style="height: fit-content; width: fit-content; margin-top: 100px;">
+            <img src="~/Content/Tecpile project/img/agresive/ghost.png" alt="" id="login_image">
+        </div>
+
+        <div id="for">
+
+            <h1>
+
+                POST
+
+
+            </h1>
+
+
+
+
+
+            <form method="post" enctype="multipart/form-data">
+                <div class="form_element" style="margin-top:100px">
+
+                    <p>
+                        Name Of gamer
+                    </p>
+
+                    <input type="text" placeholder="Name of Post" name="user" value="@Session["User"]" readonly>
+
+
+                </div>
+
+
+
+                <div class="form_element" style="  margin-top:100px">
+
+                    <p>
+                        Name of game
+                    </p>
+
+                    <input type="text" style="width: fit-content; height:fit-content;" name="g_name">
+
+
+                </div>
+
+
+                <div class="form_element" style="margin-top:100px">
+
+                    <p>
+                        Gaming ID
+                    </p>
+
+                    <input type="text" placeholder="Name of Post" name="g_id">
+
+
+                </div>
+
+
+
+
+                <div class="form_element" style="  margin-top:100px">
+
+                    <p>
+                        Rank(Current)
+                    </p>
+
+                    <input type="text" placeholder="Description" name="rank">
+
+
+                </div>
+
+
+
+
+
+                <div class="form_element" style="  margin-top:100px">
+
+                    <p>
+                        Season
+                    </p>
+
+                    <input type="text" placeholder="Description" name="Season">
+
+
+                </div>
+
+
+
+
+
+
+
+
+
+
+                <div class="form_element">
+
+
+
+                    <input type="submit" style="color: white; background-color:#ff7843; text-align: center; padding: 0px; width: 200px;">
+
+
+
+                </div>
+
+
+
+            </form>
+
+
+        </div>
+
+
+    </div>
+
+</body>
+</html>

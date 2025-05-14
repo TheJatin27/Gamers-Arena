@@ -1,0 +1,127 @@
+
+body{
+
+    margin: 0px;
+
+    
+}
+
+#main{
+
+    /*margin-top:-20px;*/
+    /*background-image: url(../img/agresive/a2.png);*/
+    background-position:center;
+    background-size:cover;
+    width: 100%;
+    height:700px;
+
+
+}
+
+#navigation{
+display: flex;
+height: 100px;
+width: 100%;
+background-color: black;
+
+
+}
+
+.n img{
+
+    height: 70px;
+    width: 120px;
+    margin-top: 15px;
+
+
+}
+
+#navigation a{
+
+    text-decoration: none;
+    color: white;
+    font-family:"Cyberverse";
+    /* background-color: #ff7843; */
+    margin-left: 50px;
+    font-size: 30px;
+    margin-top: 15px;
+
+
+}
+
+#navigation a:hover{
+
+    text-decoration:overline;
+    color:  #ff7843;
+    font-family:"Cyberverse";
+    /* background-color: #ff7843; */
+    margin-left: 50px;
+    font-size: 30px;
+    margin-top: 15px;
+
+    transform: translateY(-10px);
+
+
+}
+
+
+
+#boxes{
+
+    height: 500px;
+    width: 700px;
+    /* border:1px solid #ff7843; */
+
+    margin-left: 700px;
+
+
+}
+
+#boxes div{
+
+
+    color: whitesmoke;
+    font-family:"Cyberverse";
+
+ 
+    margin-left:50px;
+    margin-top: 50px;
+    display:inline-flex;
+    height:175px;
+    width:275px;
+    border:1px solid #862e3bff;
+
+
+}
+
+
+#boxes:hover{
+
+
+    box-shadow: 10px 10px 10px 10px #862e3bff;
+
+}
+
+#boxes h1{
+
+
+    text-align: center;
+    margin-left:auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+
+}
+
+#boxes div:hover{
+
+
+    box-shadow: 10px 10px 10px 10px #862e3bff;
+    transform: translateY(-10px);
+    height:200px;
+    width:300px;
+    cursor: pointer;
+
+
+    
+}

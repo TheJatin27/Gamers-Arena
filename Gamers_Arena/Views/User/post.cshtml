@@ -1,0 +1,159 @@
+﻿
+@{
+    ViewBag.Title = "post";
+    Layout = "~/Views/Shared/UserLayout.cshtml";
+}
+
+<head>
+
+    <style>
+
+      /*  body {
+            background-image: url('../img/random/body.jpg');
+            background-position: center;
+            background-size: cover;
+            margin-top: -1px;
+        }*/
+
+    </style>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://db.onlinewebfonts.com/c/5af457eecfd569c3264036d92c93d7ec?family=Cyberverse" rel="stylesheet">
+    <link href="~/Content/Tecpile project/css/add_post.css" rel="stylesheet" />
+</head>
+<body style="margin-top:-1px;">
+
+
+
+
+    <div id="main" style="margin-top:60px; height:fit-content;" >
+        <div style="height: fit-content; width: fit-content; margin-top: 100px;">
+            <img src="~/Content/Tecpile project/img/agresive/ghost.png" alt="" id="login_image">
+        </div>
+
+        <div id="for">
+
+            <h1>
+
+                POST
+
+
+            </h1>
+
+            <form method="post" enctype="multipart/form-data">
+
+
+
+
+                <div class="form_element" style="margin-top:100px">
+
+                    <p>
+                        Name Of user
+                    </p>
+
+                    <input type="text" placeholder="Name of Post" name="user" value="@Session["User"]" readonly>
+
+
+                </div>
+
+
+                <div class="form_element" style="  margin-top:100px">
+
+                    <p>
+                        Attach Post
+                    </p>
+
+                    <input type="file" style="width: fit-content; height:fit-content;" name="image_post">
+
+
+                </div>
+
+
+                <div class="form_element" style="margin-top:100px">
+
+                    <p>
+                        Name Of Post
+                    </p>
+
+                    <input type="text" placeholder="Name of Post" name="name_post">
+
+
+                </div>
+
+
+
+
+                <div class="form_element" style="  margin-top:100px">
+
+                    <p>
+                        Description
+                    </p>
+
+                    <input type="text" placeholder="Description" name="description">
+
+
+                </div>
+
+
+
+
+
+                <select name="game" style="width:200px; margin-top:50px;">
+
+
+                    <option value="0">
+                        Select Game
+                    </option>
+
+
+                    @foreach (var row in ViewBag.Data.Rows)
+                    {
+
+
+
+                        <option value="@row[0]">
+
+                            @row[1]
+
+                        </option>
+
+                    }
+
+
+
+
+
+                </select>
+
+
+
+
+
+
+
+                <div class="form_element">
+
+
+
+                    <input type="submit" style="color: white; background-color:#ff7843; text-align: center; padding: 0px; width: 200px;">
+
+
+
+                </div>
+
+
+
+            </form>
+
+
+        </div>
+
+
+    </div>
+
+</body>
+</html>
+
