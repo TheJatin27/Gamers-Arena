@@ -1,0 +1,102 @@
+﻿
+@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/General_Hedder_Footer.cshtml";
+}
+
+
+<head>
+
+
+    <style>
+
+        div {
+            font-family: "Cyberverse";
+        }
+
+        h1 {
+            font-family: "Cyberverse";
+        }
+    </style>
+
+    <link rel="stylesheet" href="~/Content/Tecpile project/css/login.css">
+    <link href="https://db.onlinewebfonts.com/c/5af457eecfd569c3264036d92c93d7ec?family=Cyberverse" rel="stylesheet">
+
+</head>
+<body style="margin-top:-1px;">
+
+
+    <div id="main" style="margin-top:110px;">
+        <div style="height: fit-content; width: fit-content;">
+            <img src="~/Content/Tecpile project/img/agresive/a5.png" alt="" id="login_image">
+        </div>
+
+        <div id="for">
+
+            <h1>
+
+
+                SIGN IN
+
+
+            </h1>
+
+            <p>
+                Please sign-in to your account and start the adventure...
+            </p>
+
+
+            <form method="post">
+
+
+                <div class="form_element" style="  margin-top:100px">
+
+                    <p>
+                        Your Email Or Username
+                    </p>
+
+                    <input type="text" placeholder="Your Email Or Username" name="mail">
+
+
+                </div>
+
+
+                <div class="form_element">
+
+                    <p>
+                        Password
+                    </p>
+
+
+                    <input type="password" placeholder="**********" name="pass">
+
+
+                </div>
+
+
+
+                <div class="form_element">
+
+
+
+                    <input type="submit" style="color: white; background-color:#ff7843; text-align: center; padding: 0px; width: 200px;">
+                    <p>
+                        don’t have account? <a href="/home/signup"> Sign up</a>
+                    </p>
+
+
+                </div>
+
+
+
+            </form>
+
+
+        </div>
+
+
+    </div>
+
+</body>
+
+

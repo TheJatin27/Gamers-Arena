@@ -1,0 +1,110 @@
+body{
+
+
+
+    background-image: url('../img/random/body.jpg');
+    background-position: center;
+    background-size: cover;
+    
+
+
+
+}
+
+
+#main{
+
+    display: flex;
+
+    height: 600px;
+    width: 80%;
+    /* background-color: burlywood ; */
+    /* background-image: url(../img/random/r1.jpg); */
+    background-position: center;
+    background-size: cover;
+    /* border: 1px solid blue; */
+
+    margin:  auto;
+  
+
+    margin-top: 350px;
+    margin-bottom :250px ;
+
+}
+
+a{
+
+    text-decoration: none;
+    color: #ff7843;
+
+
+}
+
+#login_image{
+margin-top: 200px;
+margin-left: -280px;
+    height: 1000px;
+    padding: 20px;
+    width: 900px;
+
+
+}
+
+
+#for{
+
+    font-family: "Cyberverse";
+    color: white;
+    /* border: 1px solid red; */
+    height: 500px;
+    width: 700px;
+    padding: 50px;
+
+
+}
+
+.form_element{
+
+    /* margin-top:50px; */
+
+
+}
+
+
+textarea{
+
+    font-family: "Cyberverse";
+    color: rgb(219, 54, 54);
+
+    padding-left: 50px;
+    background-color: rgba(158, 157, 157, 30%);
+    border: none;
+    border-radius:50px;
+    width: 550px;
+    height: 100px; 
+
+
+
+}
+
+input{
+
+    font-family: "Cyberverse";
+    color: rgb(219, 54, 54);
+
+    padding-left: 50px;
+    background-color: rgba(158, 157, 157, 30%);
+    border: none;
+    border-radius:50px;
+    width: 550px;
+    height: 40px;
+
+
+   
+
+}
+input:hover{
+    box-shadow: 5px 5px 5px 0px blue;
+
+
+}

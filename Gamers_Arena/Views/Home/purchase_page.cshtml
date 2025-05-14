@@ -1,0 +1,167 @@
+﻿
+@{
+    ViewBag.Title = "purchase_page";
+    Layout = "~/Views/Shared/General_Hedder_Footer.cshtml";
+}
+
+
+<head>
+
+
+    <style>
+
+        div {
+            font-family: "Cyberverse";
+        }
+
+        h1 {
+            font-family: "Cyberverse";
+        }
+    </style>
+
+    <link href="https://db.onlinewebfonts.com/c/5af457eecfd569c3264036d92c93d7ec?family=Cyberverse" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="~/Content/Tecpile project/css/purchase.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <video autoplay muted id="myVideo" style="background-position: center; background-size: cover;">
+
+        <source src="~/Content/Tecpile project/Video/v5/GTA 5 shorts.mp4">
+
+    </video>
+
+    @foreach (var row in ViewBag.pur.Rows)
+    {
+
+
+
+
+   <div id="main">
+        <div class="head">
+
+
+
+
+            <div class="vid">
+
+                <video autoplay muted>
+                    <source src="~/Content/GameVide/@row[2]">
+
+                </video>
+
+
+            </div>
+
+
+            <div class="detail">
+
+
+                <img src="~/Content/gameIcon/@row[3]" alt="">
+
+                <p>
+
+                  @row[14]
+
+                </p>
+
+                <p style="color: #ff7843; text-decoration: underline;">
+
+                    Developer:@row[12]
+
+                </p>
+
+                <p style="color: #ff7843; text-decoration: underline;">
+
+                    Release Date:@row[13]
+                </p>
+
+
+                <button>
+                    Buy Now At<br>
+
+                    <font style="color:rgb(0, 0, 0) ;"> @row[10]</font>
+                </button>
+
+
+            </div>
+
+
+        </div>
+        <div class="info">
+
+            <h1>
+                @row[1]
+            </h1>
+            <p>
+
+
+
+                <h2 style="color: #ff7843; text-decoration:overline; ">@row[15] </h2>
+            @row[5]
+
+
+
+            </p>
+
+
+
+
+
+
+
+            <p>
+
+                <img src="~/Content/GameImage/@row[7]" alt="">
+
+                <h2 style="color: #ff7843; text-decoration:overline; "> @row[16]</h2>
+                @row[5]
+            </p>
+
+
+
+
+
+
+
+            <p>
+
+
+
+                <img src="~/Content/GameImage/@row[8]" alt="">
+
+                <h2 style="color: #ff7843; text-decoration:overline; "> @row[17]</h2>
+                @row[5]
+            </p>
+
+
+
+
+
+
+            <p>
+
+                <img src="~/Content/GameImage/@row[9]" alt="">
+
+                <h2 style="color: #ff7843; text-decoration:overline; ">  @row[5]</h2>
+                @row[5]
+            </p>
+
+
+
+
+
+
+        </div>
+
+
+    </div>
+    }
+</body>
+</html>
+

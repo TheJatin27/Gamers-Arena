@@ -1,0 +1,85 @@
+body{
+
+
+
+    background-image: url('../img/random/body.jpg');
+    background-position: center;
+    background-size: cover;
+ 
+
+
+
+}
+
+
+#main{
+
+    display: flex;
+
+    height: 600px;
+    width: 80%;
+    /* background-color: burlywood ; */
+    /* background-image: url(../img/agresive/a2.png); */
+    /* border: 1px solid blue; */
+
+    margin:  auto;
+  
+
+    margin-top: 150px;
+    margin-bottom :250px ;
+
+}
+
+a{
+
+    text-decoration: none;
+    color: #ff7843;
+
+
+}
+
+#login_image{
+
+
+    height: 600px;
+    padding: 20px;
+    width: fit-content;
+
+
+}
+
+
+#for{
+
+    font-family: "Cyberverse";
+    color: white;
+    /* border: 1px solid red; */
+    height: 500px;
+    width: 700px;
+    padding: 50px;
+
+
+}
+
+.form_element{
+
+    margin-top:50px;
+
+
+}
+
+input{
+
+    font-family: "Cyberverse";
+    color: rgb(219, 54, 54);
+
+    padding-left: 50px;
+    background-color: rgba(158, 157, 157, 30%);
+    border: none;
+    border-radius:50px;
+    width: 550px;
+    height: 40px;
+
+
+
+}

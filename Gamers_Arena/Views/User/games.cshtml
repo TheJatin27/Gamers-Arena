@@ -1,0 +1,531 @@
+﻿
+@{
+    ViewBag.Title = "games";
+    Layout = "~/Views/Shared/UserLayout.cshtml";
+
+}
+<head>
+
+
+    <style>
+
+        .grid_view {
+            display: flex;
+            height: fit-content;
+            width: 97%;
+            padding: 20px;
+            flex-wrap: wrap;
+        }
+
+
+        .sq {
+            margin-left: 50px;
+            height: 310px;
+            margin-top: 80px;
+            margin-left: 30px;
+            margin-right: 30px;
+            width: 400px;
+            box-shadow: -5px -5px 5px #435cff;
+            display: block;
+            margin-bottom: 50px;
+        }
+        }
+    </style>
+
+
+    <script>
+
+        function abc() {
+
+            window.location.href = "/user/purchase_page";
+
+        }
+
+    </script>
+
+
+    @*<link href="https://db.onlinewebfonts.com/c/5af457eecfd569c3264036d92c93d7ec?family=Cyberverse" rel="stylesheet">*@
+
+
+    <link rel="stylesheet" href="~/Content/Tecpile project/css/games.css">
+
+
+
+</head>
+<body>
+
+
+    <div id="slidder">
+
+        <!-- <img src="" alt=""> -->
+
+
+    </div>
+    <div id="games">
+
+
+
+        <h1 id="headding">
+
+            Games
+
+        </h1>
+
+
+    </div>
+
+
+
+
+
+    <div class="grid_view" style="margin-top: 150px; width: 97%; height:fit-content;  ">
+
+
+
+        <div class="sq" style="margin-left: 30px; ">
+
+            <div class="image">
+
+                <img src="~/Content/Tecpile project/img/games/apex legend/a2.jpg" alt="" class="im">
+
+
+
+            </div>
+
+            <div class="text">
+
+                <h2>
+                    Apex Legend
+                </h2>
+
+
+                <p>
+                    Rs.1000 <a href=""> Rs.950</a>
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+
+
+
+        <div class="sq" onclick="abc()">
+
+            <div class="image">
+
+                <img src="~/Content/Tecpile project/img/games/gtav/gta1.jpg" alt="" class="im">
+
+
+
+            </div>
+
+            <div class="text">
+
+                <h2>
+                    Gta V5
+                </h2>
+
+
+                <p>
+                    Rs.1000 <a href=""> Rs.950</a>
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+
+
+        @{
+
+            if (ViewBag.Data != null)
+            {
+
+
+                foreach (var gam in ViewBag.Data.Rows)
+                {
+
+
+
+                    <div class="sq" onclick="abc()">
+
+                        <div class="image">
+
+                            <img src="~/Content/gameIcon/@gam[3]" alt="" class="im">
+
+
+
+                        </div>
+
+                        <div class="text">
+
+                            <h2>
+                                @gam[1]
+                            </h2>
+
+
+                            <p>
+                                Rs. @gam[10] <a href=""> @gam[11]</a>
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+
+                }
+
+
+            }
+
+
+      
+
+
+
+        }
+
+        <div class="sq">
+
+            <div class="image">
+
+                <img src="~/Content/Tecpile project/img/games/baldur's gate/b2.jpg" alt="" class="im">
+
+
+
+            </div>
+
+            <div class="text">
+
+                <h2>
+                    Apex Legend
+                </h2>
+
+
+                <p>
+                    Rs.1000 <a href=""> Rs.950</a>
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+
+    </div>
+
+
+    </div>
+
+
+
+
+
+
+
+
+    @*<div class="grid_view" style="margin-top:150px;">
+
+
+            <div class="sq" style="margin-left: 30px;">
+
+                <div class="image">
+
+                    <img src="~/Content/Tecpile project/img/games/Counter strik/c2.jpg" alt="" class="im">
+
+
+
+                </div>
+
+                <div class="text">
+
+                    <h2>
+                        Apex Legend
+                    </h2>
+
+
+                    <p>
+                        Rs.1000 <a href=""> Rs.950</a>
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+
+
+            <div class="sq">
+
+                <div class="image">
+
+                    <img src="~/Content/Tecpile project/img/games/cyberpunk/c2.jpg" alt="" class="im">
+
+
+
+                </div>
+
+                <div class="text">
+
+                    <h2>
+                        Apex Legend
+                    </h2>
+
+
+                    <p>
+                        Rs.1000 <a href=""> Rs.950</a>
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="sq">
+
+                <div class="image">
+
+                    <img src="~/Content/Tecpile project/img/games/cod/c2.jpg" alt="" class="im">
+
+
+
+                </div>
+
+                <div class="text">
+
+                    <h2>
+                        Apex Legend
+                    </h2>
+
+
+                    <p>
+                        Rs.1000 <a href=""> Rs.950</a>
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+
+
+
+
+
+        </div>
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="grid_view" style="margin-top:150px;">
+
+
+            <div class="sq" style="margin-left: 30px;">
+
+                <div class="image">
+
+                    <img src="~/Content/Tecpile project/img/games/apex legend/a2.jpg" alt="" class="im">
+
+
+
+                </div>
+
+                <div class="text">
+
+                    <h2>
+                        Apex Legend
+                    </h2>
+
+
+                    <p>
+                        Rs.1000 <a href=""> Rs.950</a>
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+
+
+            <div class="sq">
+
+                <div class="image">
+
+                    <img src="~/Content/Tecpile project/img/games/pubg/p2.jpg" alt="" class="im">
+
+
+
+                </div>
+
+                <div class="text">
+
+                    <h2>
+                        Apex Legend
+                    </h2>
+
+
+                    <p>
+                        Rs.1000 <a href=""> Rs.950</a>
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="sq">
+
+                <div class="image">
+
+                    <img src="~/Content/Tecpile project/img/games/red dead/r2.jpg" alt="" class="im">
+
+
+
+                </div>
+
+                <div class="text">
+
+                    <h2>
+                        Apex Legend
+                    </h2>
+
+
+                    <p>
+                        Rs.1000 <a href=""> Rs.950</a>
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+
+
+
+
+
+        </div>
+
+
+        </div>*@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+

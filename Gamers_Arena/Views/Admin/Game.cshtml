@@ -1,0 +1,499 @@
+﻿@{
+    ViewBag.Title = "add_user";
+    Layout = "~/Views/Shared/Admin_Hedder.cshtml";
+}
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="~/Content/Tecpile project/css/admin_user.css">
+    <link href="https://db.onlinewebfonts.com/c/5af457eecfd569c3264036d92c93d7ec?family=Cyberverse" rel="stylesheet">
+
+</head>
+<body>
+
+
+
+
+    <div id="main">
+        <!-- <div style="height: fit-content; width: fit-content;">
+            <img src="/img/agresive/a5.png" alt="" id="login_image">
+        </div> -->
+
+        <div id="for">
+
+            <h1>
+
+                Add Games
+
+
+            </h1>
+
+            <form method="post" enctype="multipart/form-data">
+
+
+                <div class="form_element" style="margin-top:100px">
+
+                    <p>
+                        Name Of Game
+                    </p>
+
+                    <input type="text" placeholder="Name Of Game" style="width:350px;" name="name_game">
+
+
+                </div>
+
+
+
+                <div class="form_element">
+
+                    <p>
+                        1 Video
+                    </p>
+
+
+                    <input type="file" style="width:350px;" name="vid">
+
+
+                </div>
+
+
+                <div class="form_element" style="margin-top:100px">
+
+                    <p>
+                        short desctiption
+                    </p>
+<textarea style="width:350px;" name="chota"> </textarea>
+
+
+
+                </div>
+
+
+                <div class="form_element" style="margin-top:100px">
+
+                    <p>
+                        Developer Name
+                    </p>
+
+                    <input type="text" placeholder="Developer Name" style="width:350px;" name="dev">
+
+
+                </div>
+
+
+                <div class="form_element" style="margin-top:100px">
+
+                    <p>
+                        Release Date
+                    </p>
+
+                    <input type="text" placeholder="Date of Release" style="width:350px;" name="date">
+
+
+                </div>
+
+
+
+
+                <div class="form_element" style="  margin-top:100px">
+
+                    <p>
+                        icon of game
+                    </p>
+
+                    <input type="file" style="width:350px;" name="icon">
+
+
+                </div>
+
+
+
+                <div class="form_element" style="  margin-top:100px">
+
+                    <p>
+                        Description 1
+                    </p>
+
+                    <textarea style="width:350px;" name="description1">     </textarea>
+
+
+                </div>
+
+
+                <div class="form_element" style="margin-top:100px">
+
+                    <p>
+                        Heading 1
+                    </p>
+
+                    <input type="text" placeholder="" style="width:350px;" name="head1">
+
+
+                </div>
+
+
+
+                <div class="form_element" style="  margin-top:100px">
+
+                    <p>
+                        Description2
+                    </p>
+
+
+                    <textarea style="width:300px;" name="Description2"> </textarea>
+
+
+                </div>
+
+
+
+                <div class="form_element" style="margin-top:100px">
+
+                    <p>
+                        Heading 2
+                    </p>
+
+                    <input type="text" placeholder="" style="width:350px;" name="hed2">
+
+
+                </div>
+
+
+
+                <div class="form_element">
+
+                    <p>
+                        Description3
+                    </p>
+
+
+                    <textarea placeholder="Description3" style="width:350px;" name="Description3"></textarea>
+
+
+                </div>
+
+
+                <div class="form_element" style="margin-top:100px">
+
+                    <p>
+                        Heading 3
+                    </p>
+
+                    <input type="text" placeholder="" style="width:350px;" name="head3">
+
+
+                </div>
+
+
+
+
+                <div class="form_element">
+
+                    <p>
+                        Enter Image 1 (Landscape)
+                    </p>
+
+
+                    <input type="file" style="width:350px;" name="landscape1">
+
+
+                </div>
+
+
+                <div class="form_element">
+
+                    <p>
+                        Enter Image 2 (Landscape)
+                    </p>
+
+
+                    <input type="file" style="width:350px;" name="landscape2">
+
+
+                </div>
+
+
+                <div class="form_element">
+
+                    <p>
+                        Enter Image 3 (Landscape)
+                    </p>
+
+
+                    <input type="file" style="width:350px;" name="landscape3">
+
+
+                </div>
+
+                <div class="form_element">
+
+                    <p>
+                        Sale Price
+                    </p>
+
+
+                    <input type="Text" placeholder="Price" style="width:350px;" name="price">
+
+
+                </div>
+
+                <div class="form_element">
+
+                    <p>
+                        Orignal
+                    </p>
+
+
+                    <input type="Text" placeholder="Sale price" style="width:350px;" name="sale">
+
+
+                </div>
+
+
+
+
+
+                <div class="form_element">
+
+
+
+                    <input type="submit" style="color: white; background-color:#ff7843; text-align: center; padding: 0px; width: 200px;">
+
+
+
+                </div>
+
+
+
+            </form>
+
+            <div style="width:100%; height:100px; margin-bottom:250px;">
+            </div>
+
+
+        </div>
+
+
+
+
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+
+
+
+
+        <table style="color: white; border: 2px solid white; margin: auto; padding: 5px;">
+
+            <thead>
+            <th style="color: white; border: 2px solid white; padding: 20pxs">
+                SR
+            </th>
+
+            <th style="color: white; border: 2px solid white; padding: 20px">
+                Name Of Game
+            </th>
+
+
+
+            <th style="color: white; border: 2px solid white; padding: 20px">
+                Video
+            </th>
+
+
+            <th style="color: white; border: 2px solid white; padding: 20px">
+                Icon
+            </th>
+
+
+            <th style="color: white; border: 2px solid white; padding: 20px">
+                Description1
+            </th>
+
+
+
+            <th style="color: white; border: 2px solid white; padding: 20px">
+                Description2
+            </th>
+
+            <th style="color: white; border: 2px solid white; padding: 20px">
+                Description3
+            </th>
+
+            <th style="color: white; border: 2px solid white; padding: 20px">
+                Image1
+            </th>
+
+            <th style="color: white; border: 2px solid white; padding: 20px">
+                Image2
+            </th>
+
+
+            <th style="color: white; border: 2px solid white; padding: 20px">
+                Image3
+            </th>
+
+
+            <th style="color: white; border: 2px solid white; padding: 20px">
+                Price
+            </th>
+
+            <th style="color: white; border: 2px solid white; padding: 20px">
+                Sale Rate
+            </th>
+
+            <th style="color: white; border: 2px solid white; padding: 20px">
+                Develope name
+            </th>
+
+
+            <th style="color: white; border: 2px solid white; padding: 20px">
+                Release Date
+            </th>
+
+            <th style="color: white; border: 2px solid white; padding: 20px">
+                Short Desctiption
+            </th>
+
+
+
+            </thead>
+
+
+            @{
+
+                if (ViewBag.data != null)
+                {
+
+
+                    foreach (var r in ViewBag.data.Rows)
+                    {
+
+                        <tr>
+
+                            <td style="border:  solid black; padding: 20px">
+                                @r[0]
+
+                            </td>
+
+
+
+                            <td style="border:  solid black; padding: 20px">
+                                @r[1]
+                            </td>
+
+
+
+
+
+                            <td style="border: 2px solid black; padding: 20px">
+                                <video src="~/Content/GameVide/@r[2]" width="50px" height="50px" />
+                            </td>
+
+
+
+
+                            <td style="border: 2px solid black; padding: 20px">
+                                <img src="~/Content/gameIcon/@r[3]" width="50px" height="50px" />
+                            </td>
+
+
+
+
+                            <td style="border: 2px solid black; padding: 20px">
+                                @r[4]
+                            </td>
+                            <td style="border: 2px solid black; padding: 20px">
+                                @r[5]
+                            </td>
+
+                            <td style="border: 2px solid black; padding: 20px">
+                                @r[6]
+                            </td>
+
+
+
+                            <td style="border: 2px solid black; padding: 20px">
+                                <img src="~/Content/GameImage/@r[7]" width="50px" height="50px" />
+                            </td>
+
+
+
+                            <td style="border: 2px solid black; padding: 20px">
+                                <img src="~/Content/GameImage/@r[8]" width="50px" height="50px" />
+                            </td>
+
+
+
+
+                            <td style="border: 2px solid black; padding: 20px">
+                                <img src="~/Content/GameImage/@r[9]" width="50px" height="50px" />
+                            </td>
+
+
+                            <td style="border: 2px solid black; padding: 20px">
+                                @r[10]
+                            </td>
+
+                            <td style="border: 2px solid black; padding: 20px">
+                                @r[11]
+                            </td>
+
+                            <td style="border: 2px solid black; padding: 20px">
+                                @r[12]
+                            </td>
+
+
+                            <td style="border: 2px solid black; padding: 20px">
+                                @r[13]
+                            </td>
+
+                            <td style="border: 2px solid black; padding: 20px; overflow:auto;">
+                                @r[14]
+                            </td>
+
+
+
+
+
+
+
+                        </tr>
+
+
+
+
+
+                    }
+
+                }
+
+            }
+
+
+
+
+
+
+
+
+
+
+        </table>
+
+
+
+</body>
+
+
+
